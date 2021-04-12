@@ -20,6 +20,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.rootViewController = vc
             self.window = window
             window.makeKeyAndVisible()
+            
+            // NOTE: - Bazel build - unknown variable reference "$(PRODUCT_MODULE_NAME)" while merging plists (key: "UIApplicationSceneManifest:UISceneConfigurations:UIWindowSceneSessionRoleApplication[0]:UISceneDelegateClassName", value: "$(PRODUCT_MODULE_NAME).SceneDelegate").
+            // Keep in mind that SceneDelegate config in plist file is hardcoded
+            print(NSStringFromClass(type(of: self)))
         }
     }
 
