@@ -109,4 +109,9 @@ fastlane/test_output
 
 iOSInjectionProject/
 
-bazel-*
+# Bazel + Tulsi
+bazel-bazel-tulsi-ios/
+bazel-bin/
+bazel-out/
+bazel-testlogs/
+

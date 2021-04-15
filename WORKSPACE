@@ -30,6 +30,12 @@ git_repository(
     tag = "5.1.0",
 )
 
+git_repository(
+    name = "rules_pods",
+    remote = "https://github.com/pinterest/PodToBUILD.git",
+    tag = " 3.4.1-ea20598f",
+)
+
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 http_archive(
